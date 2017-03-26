@@ -1,4 +1,6 @@
 language: python
+serices:
+  -docker
 python:
   - "2.7"
 install:
