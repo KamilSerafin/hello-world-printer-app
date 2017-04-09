@@ -3,8 +3,12 @@
 deps:
 	pip install -r requirements.txt; \
 	pip install -r test_requirements.txt
+
+# pip install flame8
 lint:
 	flake8 hello_world test
+test:
+	PYTHONPATH=. py.test --verbose -
 
 docker_build:
 	docker build -t hello-world-printer .
