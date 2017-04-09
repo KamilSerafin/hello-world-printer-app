@@ -77,7 +77,7 @@ Pomocnicze
     systemctl start docker
 
 
-WKONCU TO DZIALA!!!
+
 
 Materiały
 =========
