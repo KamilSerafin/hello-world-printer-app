@@ -20,10 +20,10 @@ docker_run: docker_build
 	-d hello-world-printer
 
 USERNAME=KamilSerafin
-TAG=$ (USERNAME) /hello-world-printer
+TAG=$(USERNAME)/hello-world-printer
 
 docker_push:
-		@docker login --username $(KamilSerafin) --password $(1oneseraphmone1)
+		@docker login --username $(USERNAME) --password $(PASSWORD)
 		docker tag hello-world-printer $(TAG); \
 		docker push $(TAG); \
 		docker logout;
