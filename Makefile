@@ -8,7 +8,7 @@ deps:
 lint:
 	flake8 hello_world test
 test:
-	PYTHONPATH=. py.test --verbose -s
+	PYTHONPATH=. py.test --verbose -s test_ui 
 
 docker_build:
 	docker build -t hello-world-printer .
